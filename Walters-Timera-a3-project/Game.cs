@@ -11,7 +11,7 @@ namespace MohawkGame2D
     public class Game
     {
         // Place your variables here:
-
+    
 
         /// <summary>
         ///     Setup runs once before the game loop begins.
@@ -21,6 +21,7 @@ namespace MohawkGame2D
             Window.SetTitle("Coin Collector");
             Window.SetSize(300, 800);
             Window.TargetFPS = 60;
+            
         }
 
         /// <summary>
@@ -28,7 +29,8 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-
+            Color lightblue = new Color(135, 206, 235);
+            Window.ClearBackground(lightblue);
         }
     }
 
