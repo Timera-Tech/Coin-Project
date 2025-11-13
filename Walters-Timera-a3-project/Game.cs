@@ -18,7 +18,9 @@ namespace MohawkGame2D
         /// </summary>
         public void Setup()
         {
-            ///MADE THE REPO
+            Window.SetTitle("Coin Collector");
+            Window.SetSize(300, 800);
+            Window.TargetFPS = 60;
         }
 
         /// <summary>
