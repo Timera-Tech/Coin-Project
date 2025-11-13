@@ -28,6 +28,7 @@ namespace MohawkGame2D
         public void Update()
         {
             ///Colors and background goes here
+            Color Brown = new Color(168, 112, 78);
             Color Lightblue = new Color(135, 206, 235);
             Color Grassgreen = new Color(72, 111, 56);
             Color Yellow = new Color(252, 229, 112);
@@ -39,7 +40,9 @@ namespace MohawkGame2D
             Draw.LineSize = 0;
             Draw.FillColor = (Grassgreen);
             Draw.Rectangle(new Vector2(0,750), new Vector2(300, 50));
-            
+
+            Crate crate = new Crate();
+            crate.DrawCrate(50, 650, Brown);
         }
 
         

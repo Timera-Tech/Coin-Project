@@ -22,7 +22,7 @@ namespace MohawkGame2D
            
         }
 
-        void DrawCrate(int x, int y, Color crateopen)
+        public void DrawCrate(int x, int y, Color crateopen)
         {
             Color Brown = new Color(168, 112, 78);
             Draw.LineSize = 1;
