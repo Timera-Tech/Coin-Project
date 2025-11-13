@@ -11,8 +11,6 @@ namespace MohawkGame2D
     public class Game
     {
         // Place your variables here:
-    
-
         /// <summary>
         ///     Setup runs once before the game loop begins.
         /// </summary>
@@ -30,16 +28,21 @@ namespace MohawkGame2D
         public void Update()
         {
             ///Colors and background goes here
-            Color lightblue = new Color(135, 206, 235);
-            Color grassgreen = new Color(72, 111, 56);
-            Window.ClearBackground(lightblue);
+            Color Lightblue = new Color(135, 206, 235);
+            Color Grassgreen = new Color(72, 111, 56);
+            Color Yellow = new Color(252, 229, 112);
+            Color Gold = new Color(212, 175, 55);
 
+            Window.ClearBackground(Lightblue);
 
             ///Drawing the Land
             Draw.LineSize = 0;
-            Draw.FillColor = (grassgreen);
+            Draw.FillColor = (Grassgreen);
             Draw.Rectangle(new Vector2(0,750), new Vector2(300, 50));
+            
         }
+
+        
     }
 
 }
