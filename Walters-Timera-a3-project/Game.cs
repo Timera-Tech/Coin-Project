@@ -34,6 +34,7 @@ namespace MohawkGame2D
             Color grassgreen = new Color(72, 111, 56);
             Window.ClearBackground(lightblue);
 
+
             ///Drawing the Land
             Draw.LineSize = 0;
             Draw.FillColor = (grassgreen);
