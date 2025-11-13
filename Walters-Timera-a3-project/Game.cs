@@ -29,8 +29,15 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
+            ///Colors and background goes here
             Color lightblue = new Color(135, 206, 235);
+            Color grassgreen = new Color(72, 111, 56);
             Window.ClearBackground(lightblue);
+
+            ///Drawing the Land
+            Draw.LineSize = 0;
+            Draw.FillColor = (grassgreen);
+            Draw.Rectangle(new Vector2(0,750), new Vector2(300, 50));
         }
     }
 
