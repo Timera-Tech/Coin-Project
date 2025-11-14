@@ -9,6 +9,7 @@ namespace MohawkGame2D
     public class Coins
     {
 
+
         public void Setup()
         {
 
@@ -25,7 +26,7 @@ namespace MohawkGame2D
             Draw.LineSize = 1;
             Draw.LineColor = Gold;
             Draw.FillColor = Yellow;
-            Draw.Circle(Window.Size / 2, 15);
+            Draw.Circle(Window.Size.X/ 2,15, 15);
         }
     }
 }

@@ -40,6 +40,9 @@ namespace MohawkGame2D
             Draw.LineSize = 0;
             Draw.FillColor = (Grassgreen);
             Draw.Rectangle(new Vector2(0,750), new Vector2(300, 50));
+            ///Call the coins
+            Coins coins = new Coins();
+            coins.DrawCoins();
 
             ///Call the crate
             Crate crate = new Crate();
@@ -49,9 +52,11 @@ namespace MohawkGame2D
             Clouds clouds = new Clouds();
             clouds.DrawClouds(0, 1, Color.White);
 
-            ///Call the coins
-            Coins coins = new Coins();
-            coins.DrawCoins();
+            ///Call Bombs
+            Bombs bombs = new Bombs();
+            bombs.DrawBombs();
+
+       
         }
 
         

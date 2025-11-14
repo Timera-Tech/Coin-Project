@@ -13,8 +13,17 @@ namespace MohawkGame2D
 
         }
 
-        public void DrawClouds()
+        public void Update()
         {
+
+        }
+        public void DrawBombs()
+        {
+
+            Draw.LineSize = 1;
+            Draw.LineColor = Color.Black;
+            Draw.FillColor = Color.Black;
+            Draw.Circle(Window.Size.X / 2, 200, 25);
 
         }
     }
