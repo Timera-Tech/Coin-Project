@@ -41,8 +41,12 @@ namespace MohawkGame2D
             Draw.FillColor = (Grassgreen);
             Draw.Rectangle(new Vector2(0,750), new Vector2(300, 50));
 
+            ///Call the crate
             Crate crate = new Crate();
-            crate.DrawCrate(50, 650, Brown);
+            crate.DrawCrate();
+
+            Clouds clouds = new Clouds();
+            clouds.DrawClouds(0, 1, Color.White);
         }
 
         
