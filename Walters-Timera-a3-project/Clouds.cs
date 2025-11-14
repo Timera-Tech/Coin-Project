@@ -35,6 +35,7 @@ namespace MohawkGame2D
             position.Y = MathF.Sign(r1) * 10.0f * MathF.Sin(0.1f * Time.SecondsElapsed) + originalPosition.Y;
             if (position.X > Window.Size.X * 200.0f) position.X = -200;
 
+            Draw.LineSize = 0;
             Draw.FillColor = new Color("#FAFAFAEE");
             Draw.Ellipse(position, new Vector2(200, 20 + r2));
 

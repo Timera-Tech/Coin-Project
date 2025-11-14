@@ -45,8 +45,13 @@ namespace MohawkGame2D
             Crate crate = new Crate();
             crate.DrawCrate();
 
+            ///Call Clouds (FAILED)
             Clouds clouds = new Clouds();
             clouds.DrawClouds(0, 1, Color.White);
+
+            ///Call the coins
+            Coins coins = new Coins();
+            coins.DrawCoins();
         }
 
         
