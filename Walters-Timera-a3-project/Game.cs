@@ -19,9 +19,6 @@ namespace MohawkGame2D
         public Clouds clouds;
         public Bombs bombs;
 
-        ///Money counter here
-        public int moneycounter = 0;
-
         /// <summary>
         ///     Setup runs once before the game loop begins.
         /// </summary>
@@ -74,11 +71,11 @@ namespace MohawkGame2D
             bombs = new Bombs();
             bombs.DrawBombs();
 
-           if (coins.IsColliding(crate))
-            {
-                moneycounter++;
-            }
+            ///Counter (FAIL)
+            int moneycounter = 0;
             Text.Draw("Coins: " + moneycounter, new Vector2(1, 1));
+            if (moneycounter == 0)
+                moneycounter++;
 
         }
 
