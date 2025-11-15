@@ -50,7 +50,7 @@ namespace MohawkGame2D
             Draw.FillColor = Brown;
 
             Draw.Rectangle(position, size);
-
+           
         }
 
     }

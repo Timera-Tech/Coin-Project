@@ -19,6 +19,8 @@ namespace MohawkGame2D
         public Clouds clouds;
         public Bombs bombs;
 
+        ///Money counter here
+        public int moneycounter = 0;
 
         /// <summary>
         ///     Setup runs once before the game loop begins.
@@ -30,6 +32,9 @@ namespace MohawkGame2D
             Window.TargetFPS = 60;
 
             crate = new Crate();
+            coins = new Coins();
+
+           
     
 
         }
@@ -48,14 +53,13 @@ namespace MohawkGame2D
 
             Window.ClearBackground(Lightblue);
 
-
+;
             ///Drawing the Land
             Draw.LineSize = 0;
             Draw.FillColor = (Grassgreen);
             Draw.Rectangle(new Vector2(0,750), new Vector2(300, 50));
            
             ///Call the coins
-            coins = new Coins();
             coins.DrawCoins();
       
             ///Call the crate
@@ -70,8 +74,12 @@ namespace MohawkGame2D
             bombs = new Bombs();
             bombs.DrawBombs();
 
+           if (coins.IsColliding(crate))
+            {
+                moneycounter++;
+            }
+            Text.Draw("Coins: " + moneycounter, new Vector2(1, 1));
 
-       
         }
 
         
